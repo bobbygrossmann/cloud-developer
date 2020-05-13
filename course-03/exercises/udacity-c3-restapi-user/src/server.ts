@@ -22,6 +22,7 @@ const c = config.dev;
   app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", c.url);
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    res.header("Access-Control-Allow-Origin", "*"); // Fix cors issue
     next();
   });
 
