@@ -15,7 +15,7 @@ spec:
         app: backend-user
     spec:
       containers:
-      - image: bobbygrossmann/udacity-restapi-user
+      - image: bobbygrossmann/udacity-c3-restapi-user:latest
         name: backend-user 
         imagePullPolicy: Always  
         resources:
